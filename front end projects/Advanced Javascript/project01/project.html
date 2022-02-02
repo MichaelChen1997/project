@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/startup.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo"></div>
+		<div class="nav">
+			<a href="#" class="nav__item">课程</a>
+			<a href="#" class="nav__item">职业路径</a>
+			<a href="#" class="nav__item">实战</a>
+			<a href="#" class="nav__item">猿问</a>
+			<a href="#" class="nav__item">手记</a>
+		</div>
+		<div class="profile">
+			<a href="#" class="profile__item profile__shopping"></a>
+			<a href="#" class="profile__item profile__message"></a
+			>
+			<a href="" class="profile__item profile__ava"></a>
+		</div>
+		<div class="search">
+			<input type="text" class="search__input">
+			<a href="#" class="search__submit"></a>
+		</div>
+	</header>
+	<div class="banner"></div>
+	
+	<div class="cart" id="cart">
+		<h1 class="title">我的购物车</h1>
+		<table>
+			<tr>
+				<td>&nbsp;<input checked type="checkbox" class="checkbox">&nbsp;&nbsp;&nbsp;商品名称</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;总价</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;单价</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;数量</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>&nbsp;<input checked class="checkbox" type="checkbox">&nbsp;&nbsp;&nbsp;<img src="img/g1.jpg" alt=""><span>&nbsp;&nbsp;前端小白成长记</span></td>
+				<td><span class="rmb">￥</span><span class="total">396</span></td>
+				<td><span class="rmb">￥</span><span class="price">396</span></td>
+				<td><input type="button" class="add btn" value="+">
+				<input type="text" class="amount" value="1">
+				<input type="button" class="subtract btn" value="-"></td>
+				<td><button>删除</button></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<input checked class="checkbox" type="checkbox">&nbsp;&nbsp;&nbsp;<img src="img/g2.jpg" alt=""><span>&nbsp;&nbsp;前端小白成长记</span></td>
+				<td><span class="rmb">￥</span><span class="total">396</span></td>
+				<td><span class="rmb">￥</span><span class="price">396</span></td>
+				<td><input type="button" class="add btn" value="+">
+				<input type="text" class="amount" value="1">
+				<input type="button" class="subtract btn" value="-"></td>
+				<td><button>删除</button></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<input checked class="checkbox" type="checkbox">&nbsp;&nbsp;&nbsp;<img src="img/g1.jpg" alt=""><span>&nbsp;&nbsp;前端小白成长记</span></td>
+				<td><span class="rmb">￥</span><span class="total">396</span></td>
+				<td><span class="rmb">￥</span><span class="price">396</span></td>
+				<td><input type="button" class="add btn" value="+">
+				<input type="text" class="amount" value="1">
+				<input type="button" class="subtract btn" value="-"></td>
+				<td><button>删除</button></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<input checked class="checkbox" type="checkbox">&nbsp;&nbsp;&nbsp;<img src="img/g1.jpg" alt=""><span>&nbsp;&nbsp;前端小白成长记</span></td>
+				<td><span class="rmb">￥</span><span class="total">396</span></td>
+				<td><span class="rmb">￥</span><span class="price">396</span></td>
+				<td><input type="button" class="add btn" value="+">
+				<input type="text" class="amount" value="1">
+				<input type="button" class="subtract btn" value="-"></td>
+				<td><button>删除</button></td>
+			</tr>
+		</table>
+			<div class="payment">应付金额:&nbsp;<span class="total_rmb">￥</span><span class="total_payment">1584</span>&nbsp;&nbsp;&nbsp;
+			<button>去结算</button>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-link">
+			<a href="#" class="footer-link__item">网站首页</a>
+			<a href="#" class="footer-link__item">企业合作</a>
+			<a href="#" class="footer-link__item">人才招聘</a>
+			<a href="#" class="footer-link__item">联系我们</a>
+			<a href="#" class="footer-link__item">讲师招聘</a>
+			<a href="#" class="footer-link__item">常见问题</a>
+			<a href="#" class="footer-link__item">意见反馈</a>
+			<a href="#" class="footer-link__item">慕课大学</a>
+			<a href="#" class="footer-link__item">友情链接</a>
+		</div>
+		<div class="footer-copy">Copyright &copy; 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</div>
+		<div class="footer-share">
+			<a href="" class="footer-share__item footer-share__item_i_1"><div class="img"></div></a>
+			<a href="" class="footer-share__item footer-share__item_i_2"></a>
+			<a href="" class="footer-share__item footer-share__item_i_3"></a>
+		</div>
+	</footer>
+<script>
+	var cart = document.querySelector('#cart');
+
+	var cartElem ={
+		add: cart.querySelectorAll('.add'),
+		subtract: cart.querySelectorAll('.subtract'),
+		amount: cart.querySelectorAll('.amount'),
+		checkbox: cart.querySelectorAll('.checkbox'),
+		btn: cart.querySelectorAll('.btn'),
+		total: cart.querySelectorAll('.total'),
+		price: cart.querySelectorAll('.price'),
+		payment: cart.querySelector('.total_payment'),
+		checkboxStatus: {}
+	};
+
+	each(cartElem.add, function (index, elem) {
+		elem.onclick = function () {
+			updateAmount(index, this.value);
+			updateTotal(index, this.value);
+			updatePayment(index);
+	 	};
+	});
+
+	each(cartElem.subtract, function (index, elem) {
+		elem.onclick = function () {
+			updateAmount(index, this.value);
+			updateTotal(index);
+			updatePayment();
+	 	};
+	});
+	
+	each(cartElem.checkbox, function(index, elem){
+		cartElem.checkbox[0].onchange = function (){
+			if(cartElem.checkbox[0].checked){
+				for(var i=1;i<cartElem.checkbox.length;i++){
+					cartElem.checkbox[i].checked = true;
+					cartElem.checkbox[i].setAttribute('check','yes');
+					updatePayment();
+				}
+			} else {
+				for(var i=1;i<cartElem.checkbox.length;i++){
+					cartElem.checkbox[i].checked = false;
+					cartElem.checkbox[i].setAttribute('check','no');
+					updatePayment();
+				}
+			}
+		}
+		for(var i=1;i<cartElem.checkbox.length;i++){
+			(function(i) {
+				cartElem.checkbox[i].onchange= function (){
+					if(!cartElem.checkbox[i].checked){
+						cartElem.checkbox[0].checked = false;
+						cartElem.checkbox[i].setAttribute('check','yes');
+						updatePayment();
+					} else{
+						cartElem.checkbox[i].setAttribute('check','no');
+						updatePayment();
+					}
+				}
+			})(i)
+		}	
+	})
+
+	function each(array, fn){
+		for(var i=0;i<array.length;i++) {
+			fn(i, array[i]);
+		}
+	}
+
+	function updateAmount(index, value){
+		if(cartElem.amount[index].value>=1){
+			if(value == "+"){
+				cartElem.amount[index].value = operation.add(cartElem.amount[index].value);
+			}else{
+				if(cartElem.amount[index].value == 1){
+					cartElem.amount[index].value = 1;
+				} else{
+					cartElem.amount[index].value = operation.subtract(cartElem.amount[index].value);	
+				}
+			}
+		} 
+	}
+	function updatePayment() {
+		var total = 0;
+		for (var i=0; i<cartElem.total.length;i++) {
+			if(cartElem.checkbox[i+1].checked === true){
+				total += +cartElem.total[i].innerHTML;
+			}
+		}
+		cartElem.payment.innerHTML = total;
+	}
+
+	function updateTotal(index){
+		cartElem.total[index].innerHTML = cartElem.price[index].innerHTML * cartElem.amount[index].value;
+	}
+
+	var operation = {
+		add: function(num) {
+		   	return +num + 1;
+	 	},
+	 	subtract: function(num) {
+	    	return num - 1;
+ 	    }
+	}
+</script>
+</body>
+</html>

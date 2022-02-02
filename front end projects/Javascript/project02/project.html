@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type"charset="utf-8" content="text/html； charset=utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function birth(){
+			var year = parseInt(prompt("请输入您的出生年份"));
+			var mouth = parseInt(prompt("请输入您的出生月份"));
+			var day = parseInt(prompt("请输入您的出生日期"));
+			var total_days = day
+			for(var i=1; i<mouth+1; i++){
+				if(i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12){
+					total_days += 31
+				}else if(i == 2){
+					if(year % 4 == 0){
+						total_days += 29
+					}else{
+						total_days += 28
+					}
+				}else{
+					total_days += 30
+				}
+			}
+			var result = "你的生日" + year + "年是第" + total_days + "天";
+			return result;
+		}
+
+		document.write(birth());
+		
+	</script>
+</body>
+</html>

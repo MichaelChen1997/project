@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">								
+</head>
+<body>
+	<header class="header">
+		<div class="wrap">
+			<p>慕课高铁服务中心|<a href="#" class="service">客户服务</a></p>
+			<p>意见反馈<a href="#" class="email"> imooc@com</a>&nbsp;&nbsp;您好，请
+			<a href="#"class="log-in">登录</a> | <a href="" class="register">注册</a>&nbsp;&nbsp;
+			<span class="imooc">我的IMOOC</span><span class="triangle"></span></p>
+		</div>
+		<div class="form" id="form">
+			<p>未完成订单</p>
+			<p>已完成订单（改、退）</p>
+			<hr>
+			<p>我的保险</p>
+			<hr>
+			<p>查看个人信息</p>
+			<p>账户安全</p>
+			<hr>
+			<p>常用联系人</p>
+			<hr>
+			<p>重点旅客预约</p>
+			<p>遗失物品查找</p>
+			<hr>
+			<p>服务查询</p>
+			<hr>
+			<p>投诉</p>
+			<p>建议</p>
+		</div>
+	</header>
+	
+	<p class="position">您现在的位置：<span>客运首页 > 注册</span></p>
+
+	<div class="info">
+		<p class="title">客户信息</p>
+		<div>
+			<span class="star">*</span><lable>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</lable>
+			<input type="text" class="username" id="username" placeholder="用户名甚至成功后不可修改">
+			<span class="hint">6-30位字母、数字"-"，字母开头</span>
+		</div>
+		<div>
+			<span class="star">*</span><lable>登录密码：</lable>
+			<input type="text" class="password" id="password" placeholder="6-20位字母、数字或者符号">
+			<span class="red" id="red"></span>
+			<span class="yellow" id='yellow'></span>
+			<span class="green" id="green"></span>
+			<p class="hint"></p>
+		</div>
+		<div>
+			<span class="star">*</span><lable>确认密码：</lable>
+			<input type="text" class="confirm-password" id="confirm-password" placeholder="再次输入您的登录密码">
+			<span class="hint"></span>
+		</div>
+		<div class="name">
+			<span class="star">*</span><lable>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</lable>
+			<input type="text" class="Name" id="Name" placeholder="请输入姓名">
+			<span class="hint">姓名填写规则</span>
+			<div class="rule">
+				<p>1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字代替。</p>
+				<p>2.输入姓名后，遇有系统无法重却显示的汉字，可用生僻字拼音或同音字重新修改后保存。</p>
+				<p>3.姓名中有繁体字无法输入时，可用简体替代。</p>
+				<p>4.姓名较长，汉字或英文字符合计超过30个（1个耗子算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不去别大小写</p>
+			</div>
+		</div>
+		<div>
+			<span class="star">*</span><lable>证件类型：</lable>
+			<select name="type" id="type" class="type">
+				<option value="ID-card">二代身份证</option>
+				<option value="HK">港澳通行证</option>
+				<option value="TaiWang">台湾通行证</option>
+				<option value="passport">护照选项</option>
+			</select>
+		</div>
+		<div>
+			<span class="star">*</span><lable>证件号码：</lable>
+			<input type="text" class="number" id="number" placeholder="请输入您的证件号码">
+			<span class="hint"></span>
+		</div>
+		<div>
+			<span class="star">*</span><lable>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</lable>
+			<input type="text" class="email" id="email" placeholder="请正确填写邮箱地址">
+			<span class="hint"></span>
+		</div>
+		<div>
+			<span class="star">*</span><lable>手机号码：</lable>
+			<input type="text" class="telephone" id="telephone" placeholder="请输入您的手机号码">
+			<span class="hint">请正确填写手机号码，稍后向该手机号码发售短信验证码</span>
+		</div>
+		<div>
+			<span class="star">*</span><lable>旅客类型：</lable>
+			<select name="traveller-type" id="traveller-type" class="traveller-type">
+				<option value="adult">成人</option>
+				<option value="child">儿童</option>
+				<option value="soldier">残疾军人</option>
+				<option value="police">伤残任命警察</option>
+			</select>
+		</div>
+		<div>
+			<input class="checkbox" id="checkbox" type="checkbox"> 我以阅读并同意遵守
+			<a class="rule">《中国铁路客户服务中心网络服务条款》</a>
+		</div>
+		<button class="btn" id="btn"><a href="#">下一步</a></button>
+	</div>
+
+	<footer class="footer">
+		<p>关于我们 | 网络声明</p>
+		<p>copyright &copy; 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+	</footer>
+</body>
+</html>
+<script src="js/script.js"></script>

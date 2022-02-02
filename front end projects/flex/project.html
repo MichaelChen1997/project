@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+</head>
+<body>
+	<!--section01-->
+		<div id="section01">
+			<header> 
+				<ul class="content">
+					<li><a href="">前段</a></li>
+					<li><a href="">java</a></li>
+					<li><a href="">ios</a></li>
+					<li><a href="">Android</a></li>
+					<li><a href="">php</a></li>
+				</ul>
+				<div class="list">
+					imooc
+					<div class="btn"></div>
+				</div>
+			</header>
+			<div class="img">
+				<img src="img/9.png" alt="">
+				<p>IMOOC</p>
+				<button>start</button>
+			</div>
+		</div>
+	<!--section02-->
+		<div id="section02">
+			<ul>
+				<li><a href="">关于慕课网</a></li>
+				<li><a href="">关于课程</a></li>
+				<li><a href="">核心团队</a></li>
+				<li><a href="">新增专题</a></li>
+			</ul>
+		</div>
+	<!--section03-->
+		<div id="section03">
+			<h1>响应式</h1>
+			<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文<br>内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用<br>户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建<br>一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？<br>起飞页可以满足你的所有需求。我们是响应式网站的倡导者。所有前端网页代码都<br>采用HTML5和CSS3实现，起飞页提供了海量精美网站模板和成品网站，几乎涵盖了<br>当今各个行业，您只需要在网页上进行少量修改，即可完成自己的网站，这一切都是<br>免费的。</p>
+		</div>
+	<!--section04-->
+		<div id="section04">
+			<p>IMOOC</p>
+			<p>welcome&nbsp;to&nbsp;<span>ww.imooc.com</span></p>
+		</div>
+	<!--section05-->
+		<div id="section05">
+			<p>主打课程</p>
+			<ul>
+				<li><img src="img/1.jpg" alt=""></li>
+				<li><img src="img/2.jpg" alt=""></li>
+				<li><img src="img/3.jpg" alt=""></li>
+				<li><img src="img/4.jpg" alt=""></li>
+				<li><img src="img/5.jpg" alt=""></li>
+				<li><img src="img/6.jpg" alt=""></li>
+			</ul>
+		</div>
+	<!--section06-->
+		<div id="section06">
+			Copyright&nbsp;&copy;&nbsp;2017&nbsp;imooc.com&nbsp;All&nbsp;Rights&nbsp;Reserved
+		</div>
+	<script>
+		var btn = document.getElementsByClassName('btn')[0];
+		var ul = document.getElementsByClassName('content')[0];
+		var bool = false;
+		/*点击btn下拉菜单*/
+		btn.onclick = function() {
+		if (!bool) {
+			ul.style.top = "80px";
+			bool = true;
+		} else {
+			ul.style.top = "-180px";
+			bool = false;
+				}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+/*ipad*/
+/*全局变量*/
+	*{
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+
+	a{
+		text-decoration: none;
+	}
+/*section01*/	
+	#section01{
+		background: #B2C5CC;
+		height: 600px;
+		width: 100%;
+		position: relative;
+	}
+
+	header{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	header .list {
+		display: none;
+	}
+
+	#section01 ul li{
+		list-style: none;
+		display: inline-block;
+	}
+	
+	#section01 ul li a{
+		display: block;
+		padding: 0 30px;
+		height: 80px;
+		line-height: 80px;
+		padding-top: 10px;
+	}
+
+
+	#section01 ul li a:hover {
+		color: #afafaf;
+	}
+
+	#section01 .img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-65px,-113px);
+	}
+	
+	#section01 .img p{
+		font-size: 16px;
+		color: #ffffff;
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	#section01 .img button{
+		margin: 30px 0;
+		background: #ffffff;
+		color: black;
+		height: 40px;
+		width: 120px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	
+	#section01 .img button:hover {
+		background: rgb(232, 232, 232);
+	}
+
+	#section01 ul li a{
+		color: #757575;
+	}
+
+	#section01 ul li:hover{
+		color: #afafaf;  
+	}
+/*section02*/		
+	#section02 ul{
+		height: 100px;
+		border-bottom: 1px solid black;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#section02 ul li{
+		list-style: none;
+	}
+
+	#section02 ul li a{
+		color: #545454;
+	}
+
+	#section02 ul li a:hover{
+		color: #545454;
+	}
+/*section03*/	
+	#section03{
+		text-align: center;
+		width: 63%;
+		margin: 50px auto 100px;
+	}
+
+	#section03 h1{
+		font-size: 26px;
+		font-weight: 500;
+		text-align: center;
+		padding: 80px 0 30px 0;
+		color: #545454;
+	}
+
+	#section03 p{
+		line-height: 22px;
+		font-size: 13px;
+		color: #bababa;
+	}
+/*section04*/	
+	#section04{
+		height: 80px;
+		background: #bababa;
+	}
+
+	#section04 p:first-child{
+		font-size: 26px;
+		color: #545454;
+		line-height: 80px;
+		margin-left: 20px;
+	}
+	#section04 p:last-child{
+		display: flex;
+		justify-content: flex-end;
+	    transform: translate(-20px, -80px);
+		line-height: 80px;
+		font-size: 20px;
+		color: #545454;
+	}
+
+	#section04 p span{
+		color: black;
+	}
+/*section05*/	
+	#section05{
+		background-image:url("img/bg.jpg");
+		padding: 100px 0;	
+	}
+	
+	#section05 p{
+		font-size: 20px;
+		color: #545454;
+		transform: translate(20px, 0);
+		width: 200px;
+		margin-bottom: 15px;
+	}
+	
+	#section05 ul{
+		font-size: 0;
+	}
+
+	#section05 ul li{
+		list-style: none;
+		width: 30%;
+		height: 100%;
+		display: inline-block;
+		margin-left: 2.5%;
+		margin-bottom: 2.5%;
+		overflow: hidden;
+	}
+	
+	#section05 ul li:hover img {
+		transform: scale(2);
+	}
+
+	#section05 ul li img {
+		display: block;
+		width: 100%;
+		height: 250px;
+		transition: all 2s;
+	}
+/*section06*/	
+	#section06{
+		height: 80px;
+		font-size: 16px;
+		line-height: 80px;
+		text-align: center;
+		background: #bababa;
+		clear: both;
+	}
+/*iphone*/
+
+@media screen and (max-width: 376px){
+	/*全局变量*/
+	*{
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+
+	a{
+		text-decoration: none;
+	}
+	/*section01*/
+	#section01{
+		background: #B2C5CC;
+		height: 600px;
+		width: 100%;
+		position: relative;
+	}
+
+	header{
+		height: 80px;
+		background: #7EA6B1;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	
+	header .list {
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background: #7ea6b1;
+		text-align: center;
+		line-height: 80px;
+		font-size: 24px;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		z-index: 3;
+	}
+
+	header .btn{
+		width: 20px;
+		height: 20px;
+		border: 2px solid #ccc;
+		position: absolute;
+		right: 29px;
+		top: 29px;
+	}
+
+	#section01 ul {
+		position: absolute;
+		top: -180px;
+		background: #7EA6B1;
+		z-index: 2;
+	}
+
+	#section01 ul li{
+		width: 100%;
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+		background: #7EA6B1;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+	
+	#section01 ul li:last-child {
+		border-bottom: none;
+	}
+
+	#section01 ul li a{
+		display: block;
+		padding: 0 30px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+
+	#section01 ul li a:hover {
+		background: rgb(255, 255, 255);
+		color: #B2C5CC;
+	}
+
+	#section01 .img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-65px,-113px);
+	}
+	
+	#section01 .img p{
+		font-size: 16px;
+		color: #ffffff;
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	#section01 .img button{
+		margin: 30px 0;
+		background: #ffffff;
+		color: black;
+		height: 40px;
+		width: 120px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	#section01 ul li a{
+		color: #757575;
+	}
+
+	#section01 ul li:hover{
+		color: #afafaf;  
+	}
+	/*section02*/
+	#section02 ul{
+		height: 60px;
+		border-bottom: 1px solid black;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#section02 ul li{
+		list-style: none;
+	}
+
+	#section02 ul li a{
+		font-size: 12px;
+		color: #bababa;
+	}
+
+	#section02 ul li a:hover{
+		color: #545454;
+	}
+	/*section03*/
+	#section03{
+		text-align: center;
+		width: 95%;
+		margin: 50px auto;
+	}
+
+	#section03 h1{
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+		padding: 20px 0 20px 0;
+		color: #545454;
+	}
+
+	#section03 p{
+		text-align: left;
+		line-height: 16px;
+		font-size: 8px;
+		color: #bababa;
+		width: 80%;
+		margin: 0 auto;
+	}
+	/*section04*/
+	#section04{
+		height: 60px;
+		background: #bababa;
+	}
+
+	#section04 p:first-child{
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		transform: translate(0px, -20px);
+	}
+
+	#section04 p:last-child{
+		display: flex;
+		justify-content: center;
+		font-size: 12px;
+		transform: translate(0px, -76px);
+	}
+
+	#section04 p span{
+		color: black;
+	}
+	/*section05*/
+	#section05{
+		background-image: url("img/bg.jpg");
+		padding: 20px 0;
+	}
+	
+	#section05 p{
+		font-size: 14px;
+		color: #545454;
+		width: 200px;
+	}
+	
+	#section05 ul li{
+		list-style: none;
+		width: 46%;
+		height: 200px;
+		display: inline-block;
+		margin-left: 2.5%;
+		margin-bottom: 2.5%;
+		overflow: hidden;
+	}
+	/*section06*/
+	#section06{
+		height: 40px;
+		font-size: 4px;
+		line-height: 40px;
+		text-align: center;
+		background: #bababa;
+		clear: both;
+	}
+}

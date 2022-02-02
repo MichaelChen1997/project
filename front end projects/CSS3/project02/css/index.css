@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	overflow: hidden;
+}
+/*background*/
+.main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(rgb(196, 228, 253) 0%, #fff 60%,  rgb(148, 190, 89)100%);
+	background: -moz-linear-gradient(rgb(196, 228, 253) 0%, #fff 60%,  rgb(148, 190, 89)100%);
+	background: -ms-linear-gradient(rgb(196, 228, 253) 0%, #fff 60%,  rgb(148, 190, 89)100%);
+	background: -o-linear-gradient(rgb(196, 228, 253) 0%, #fff 60%,  rgb(148, 190, 89)100%);
+	background: linear-gradient(rgb(196, 228, 253) 0%, #fff 60%,  rgb(148, 190, 89)100%);
+	z-index: 1;
+}
+
+/*cloud01*/
+.x1{
+	position: absolute;
+    top: 70px;
+    left: 35%;
+	background: #ffffff;
+	-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+	-ms-transform: translate(0px,0px);
+	-o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+	animation: move-1 13s ease-in infinite;
+}
+
+/*cloud02*/
+.x2{
+	position: absolute;
+	top: 110px;
+    left: 80%;
+	-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+	-ms-transform: translate(0px,0px);
+	-o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+	animation: move-2 13s ease-in 2s infinite;
+}
+
+/*cloud03*/
+.x3{
+	position: absolute;
+	top: 150px;
+    left: 47%;
+	-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+	-ms-transform: translate(0px,0px);
+	-o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+	animation: move-3 13s ease-in 0.5s infinite;
+}
+
+/*大cloud*/
+.x4{
+	position: absolute;
+	top: -25px;
+    left: 60%;
+	transform: scale(1.3);
+	-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+	-ms-transform: translate(0px,0px);
+	-o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+	animation: move-4 10s ease-out 0.5s infinite;
+}
+
+/*小cloud*/
+.x5{
+	position: absolute;
+	top: 60px;
+    left: 75%;
+	transform: scale(0.7);
+	background: rgb(255,255,255);
+	-webkit-transform: translate(0px,0px);
+	-moz-transform: translate(0px,0px);
+	-ms-transform: translate(0px,0px);
+	-o-transform: translate(0px,0px);
+	transform: translate(0px,0px);
+	animation: move-5 19s ease 1s infinite;
+}
+
+/*cloud样式*/
+.cloud{
+	position: relative;
+	width: 200px;
+	height: 60px;
+	border-radius: 200px;
+	background: #fff;
+	margin-left: 65%;
+}
+
+.cloud:before,.cloud:after{
+	position: absolute;
+	position: absolute;
+	top: -15px; left: 10px;
+	width: 100px; height: 80px;
+	content: '';
+	transform: 100px;
+	border-radius: 100px;
+	background: #fff;
+}
+
+.cloud:after{
+	top: -55px;
+	right: 15px;
+	left: auto;
+	width: 120px;
+	height: 120px;
+	background: #fff;
+}
+
+.earth{
+	position: relative;
+}
+
+.rabbit{
+	position: absolute;
+    top: 280px;
+    left: 800px;
+}
+
+img{
+	width: 150px;
+	height: 150px;
+}
+
+@keyframes move-1 {
+	0% {
+		left: 100%;
+		color: transparent;
+		}
+	10%{
+		color: #ffffff;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+@keyframes move-2 {
+	0% {
+		left: 100%;
+		color: transparent;
+		}
+	10%{
+		color: #ffffff;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+@keyframes move-3 {
+	0% {
+		left: 100%;
+		color: transparent;
+		}
+	10%{
+		color: #ffffff;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+@keyframes move-4 {
+	0% {
+		left: 100%;
+		}
+	100% {
+		left: -100%;
+	}
+}
+
+@keyframes move-5{
+	0% {
+		left: 100%;
+		}
+	100% {
+		left: -100%;
+	}
+}

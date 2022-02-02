@@ -1,0 +1,256 @@
+/*全局变量*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Microsoft YaHei UI；
+}
+
+/*包裹元素80%*/
+.wrap1{
+	margin: 0 auto;
+	width: 80%;
+}
+
+/*包裹元素50%*/
+.wrap2{
+	width: 50%;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+header{
+	width: 100%;
+	background-color: #2e2e2e;
+	height: 80px;
+}
+
+header .image{
+	float: left;
+	margin-top: 24px;
+	margin-left: 20px;
+}
+
+header nav ul li a:hover {
+	color: #2e2e2e;
+	background-color: #f46208;
+}
+
+header nav ul li a{	
+	color: #ffffff;
+	float: right;
+	padding: 0 40px;
+	line-height: 80px;
+}
+
+/*banner区*/
+.banner{
+	position: relative;
+}
+
+.banner img{
+	width: 100%;
+	height: 550px;
+}
+
+.banner .layer{
+	width: 834px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -417px;
+	margin-top: -65px;
+}
+
+.banner .layer h1{
+	color: #ffffff;
+	font-size: 78px;
+	text-align: center;
+}
+
+.banner .layer p{
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*portfolio*/
+.Portfolio{
+	margin: 100px;
+}
+
+.Portfolio .wrap2 h2{
+	font-weight: normal;
+	font-size: 72px;
+	color: #f46208;
+	text-align: center;
+}
+
+.Portfolio .wrap2 p{
+	margin: 40px 0;
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.Portfolio .wrap2 .Portfolio-bottom {
+	text-align: center;
+}
+
+.Portfolio .wrap2 .Portfolio-bottom div{
+	border: 1px solid #f46208;
+	padding: 5px 10px;
+	display: inline-block; 
+	margin: 20px 10px;
+}
+
+.Portfolio .wrap2 .Portfolio-bottom div:hover{
+	color: #2e2e2e;
+	background-color: #f46208;
+}
+
+/*img区*/
+.img{
+	width: 100%;
+}
+
+/*stats区*/
+.stats{
+	padding: 100px 0;
+}
+
+.stats .wrap2 h1{
+	font-weight: normal;
+	font-size: 72px;
+	color: #f46208;
+	text-align: center;
+}
+
+.stats .wrap2 p{
+	margin: 40px 0;
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+
+ .stats .wrap2 .stats-bottom{
+ 	position: relative;
+ 	margin-top: 40px;
+ } 
+
+ .stats .wrap2 .stats-bottom div{
+ 	width: 24.5%;
+ 	text-align: center;
+	display: inline-block;
+	margin: auto auto;
+}
+
+ .stats .wrap2 .stats-bottom div .p2{
+ 	color: #f46208;
+ 	font-size: 26px;
+ }
+
+/*team区*/
+.team{
+	background-color:#2e2e2e;
+	padding: 100px 0;
+}
+
+.team .wrap2 h1{
+	font-weight: normal;
+	font-size: 72px;
+	color: #f46208;
+	text-align: center;
+}
+
+
+.team .wrap2 p{
+	margin: 40px 0;
+	color: #ffffff;
+	text-align: center;
+}
+
+.team .wrap2 div{
+	display: inline-block;
+	width: 32%;
+	text-align:center;
+	color: #ffffff;
+}
+
+.team .wrap2 div p{
+	font-size: 14px;
+	margin: 0;
+}
+
+/*contact区*/
+.contact{
+	padding: 100px 0;
+	text-align: center;
+}
+
+.contact .wrap2 h1{
+	font-weight: normal;
+	font-size: 72px;
+	color: #f46208;
+}
+
+.contact .wrap2 p{
+	margin: 60px 0;
+	text-align: center;
+}
+
+.contact .wrap2 form div{
+	display: inline-block;
+}
+
+.contact .wrap2 form .input:first-child {
+	margin-right: 10px;
+}
+
+.contact .wrap2 form .input:last-child {
+	margin-left: 10px;
+}
+
+.contact .wrap2 form .input{
+	width: 350px;
+	height: 40px;
+	font-size: 16px;
+}
+
+.contact .wrap2 form #textarea{
+	width: 730px;
+	height: 260px;
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+#textarea::-webkit-input-placeholder{
+	height: 260px;
+	line-height: 260px;
+}
+
+.contact .wrap2 form #submit{
+	background-color: #f46208;
+	color: #ffffff;
+	height: 40px;
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/*footer区*/
+footer{
+	background-color:#2e2e2e;
+	height: 80px;
+	color: #ffffff;
+	line-height: 80px;
+	text-align: center;
+}
